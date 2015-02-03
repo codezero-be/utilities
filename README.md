@@ -26,10 +26,16 @@ Download this package or install it through Composer:
         '/somepage.php'
     ];
 
-	$urlHelper = new \CodeZero\Utilities\UrlHelper();
+    use CodeZero\Utilities\UrlHelper;
+
+	$urlHelper = new UrlHelper();
+
     $url = $urlHelper->joinSlugs($urlParts);
-	// Returns: http://www.mysite.com/subdir/someOtherDir/somepage.php
+
+> Returns: `http://www.mysite.com/subdir/someOtherDir/somepage.php`
 
 This will make sure there is only one slash between each slug.
 
 ### That's all for now...
+---
+[![Analytics](https://ga-beacon.appspot.com/UA-58876018-1/codezero-be/utilities)](https://github.com/igrigorik/ga-beacon)
